@@ -1,0 +1,194 @@
+#toolbar {
+  background: white;
+  border: none;
+  color: white !important;
+
+  width: 100%;
+
+  z-index: 9999;
+  @include shadow;
+  padding: 1rem;
+}
+
+.nav.editor {
+  justify-content: flex-start;
+
+  width: 100%;
+  margin-top: 0;
+
+  z-index: 9999;
+}
+.topBar {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  @media (max-width: 600px) {
+    position: absolute;
+  }
+}
+
+.docTitle {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 30rem;
+  .title {
+    background: $gray;
+    width: 100%;
+  }
+  @media (max-width: 1440px) {
+    width: 20rem;
+  }
+  @media (max-width: 1024px) {
+    width: 10rem;
+  }
+  @media (max-width: 840px) {
+    width: 5rem;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+}
+.nav-item.primary {
+  color: $primary;
+}
+.nav-item {
+  margin-right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: $text;
+}
+.nav-item.ml {
+  margin-left: auto;
+}
+.saved {
+  color: $primary;
+  margin-right: auto;
+}
+.saved.error {
+  color: $warning;
+}
+.nav-item.delete {
+  color: $warning;
+}
+
+.lastEdited {
+  @media (max-width: 600px) {
+    width: 70%;
+  }
+}
+
+.editor__app {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1600px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  @media (max-width: 1200px) {
+    margin-top: 10rem;
+  }
+  @media (max-width: 600px) {
+    margin-top: 20rem;
+  }
+  //background: red;
+}
+.editor__document {
+  background: white;
+  overflow-y: auto;
+  width: 60%;
+  max-height: 82vh;
+  @include shadow;
+  @include rounding;
+  padding: 1rem;
+  position: fixed;
+  margin-right: 10px;
+}
+.review {
+  margin-left: 10px;
+  white-space: pre-wrap;
+  background: white;
+  overflow: auto;
+  width: 296px;
+  min-height: 90vh;
+  @include shadow;
+  @include rounding;
+  padding: 1rem;
+  position: relative;
+}
+.b-style {
+  width: 100%;
+  //  height: 500px;
+  //position: fixed;
+  border: 1px solid;
+  // border-color: rgb(183, 120, 255);
+}
+.share_link {
+  width: 100%;
+  display: flex;
+  margin: 1rem 0;
+  p {
+    margin-right: 1rem;
+  }
+  input {
+    margin-left: 1rem;
+    width: 90%;
+  }
+}
+.font-lemonada {
+  font-family: "Lemonada", sans-serif;
+}
+// Side Tool Bar
+// .mainButton {
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   font-size: 9px;
+//   line-height: 14px;
+//   color: #FFFFFFFF; /* white */
+//   button {
+//     width: 79px;
+//     height: 23px;
+//     border-radius: 12px;
+//     box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+//   }
+//   .btnBlue {
+//     background-color: #1749eeff;
+//   }
+//   .btnRed {
+//     background-color: #f22128ff;
+//   }
+// }
+// .searchBox {
+//   margin-top: 22px;
+//   display: flex;
+//   justify-content: end;
+
+//   .searchParent {
+//     width: 267px;
+//     height: 65px;
+//     background: #F5F3EFFF;
+//     border-radius: 4px; /* border-m */
+//     box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f; /* shadow-xs */
+//     .searchInput {
+//       background: #F5F3EFFF;
+//       width: 100%;
+//       height: 100%;
+//     }
+//   }
+//   .btnSearch {
+//     margin-top: 9px;
+//     width: 48px;
+//     padding: 4px;
+//     background: #4573E8FF;
+//     border-radius: 12px;
+//     box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f; /* shadow-xs */
+//     font-size: 8px;
+//     line-height: 14px;
+//     color: white;
+//   }
+// }
